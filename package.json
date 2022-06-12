@@ -9,7 +9,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.js",
     "build": "yarn clean && cross-env NODE_ENV=production webpack --config webpack/build.js",
     "clean": "rimraf dist",
-    "lint": "eslint --ext .ts,.tsx,.js --ignore-path .gitignore . --fix",
+    "lint": "eslint --ext .ts,.tsx,.js --ignore-path .gitignore . --fix --max-warnings 0",
     "test": "echo 'Error: no test specified' && exit 1",
     "prepare": "husky install"
   },
