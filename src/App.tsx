@@ -4,7 +4,7 @@ const App = () => {
   return (
     <Button
       type="primary"
-      onClick={e => {
+      onClick={() => {
         message.success('This is a success message')
       }}
     >
